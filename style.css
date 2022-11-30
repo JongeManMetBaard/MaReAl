@@ -1,0 +1,66 @@
+*{padding: 0px;
+margin:0px;}
+
+body{
+    background-image: linear-gradient(to bottom right, #d2d2d2,#696969,#0b0b0b);
+    background-attachment: fixed;
+}
+
+.intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: grey;
+    text-align: justify;
+    margin: 0%;
+    padding-left: 10px;
+}
+
+.title{
+    font-size: 45px;
+    opacity: 100%;
+}
+
+.menu_bar{
+    padding-right: 10px;
+    text-align: right;
+    display:inline-block;
+    opacity: 100%;
+    
+    
+    
+    
+
+}
+.menu_bar,a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: right;
+    font-size: 20px;
+}
+
+
+li{
+    display:inline
+    
+}
+
+body{
+    margin: auto;
+}
+
+h1{
+    
+    display:inline-block;
+    
+}
+ul{
+    float: right;
+}
+
+.Search_Bar{
+    width: 20%;
+    text-align: left;
+    
+
+}
