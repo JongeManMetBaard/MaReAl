@@ -2,7 +2,7 @@
 margin:0px;}
 
 body{
-    background-image: linear-gradient(to bottom right, #d2d2d2,#696969,#0b0b0b);
+    background-color:#69696967;
     background-attachment: fixed;
 }
 
@@ -61,6 +61,8 @@ ul{
 .Search_Bar{
     width: 20%;
     text-align: left;
-    
+}
 
+.WelcomeText{
+    padding-top: 50%;
 }
