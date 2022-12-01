@@ -8,11 +8,12 @@ body{
 
 .intro{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: rgb(68, 68, 68);
     background-color: grey;
     text-align: justify;
     margin: 0%;
     padding-left: 10px;
+
 }
 
 .title{
@@ -32,7 +33,7 @@ body{
 
 }
 .menu_bar,a{
-    color: white;
+    color: rgb(68, 68, 68);
     text-decoration: none;
     padding: 15px;
     text-align: right;
@@ -64,5 +65,9 @@ ul{
 }
 
 .WelcomeText{
-    padding-top: 50%;
+    padding-top: 18%;
+    text-align: center;
+    font-size: 500%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(68, 68, 68);
 }
