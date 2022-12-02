@@ -71,3 +71,13 @@ ul{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(68, 68, 68);
 }
+
+.summary{
+    position:relative;
+    left: 745px;
+    right: 4px;
+    bottom: 180px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+}
