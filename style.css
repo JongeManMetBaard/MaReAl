@@ -4,6 +4,12 @@ margin:0px;}
 body{
     background-color:#69696967;
     background-attachment: fixed;
+    min-height: 100%;
+    margin: 0;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .intro{
@@ -13,7 +19,6 @@ body{
     text-align: justify;
     margin: 0%;
     padding-left: 10px;
-
 }
 
 .title{
@@ -46,8 +51,8 @@ li{
     
 }
 
-body{
-    margin: auto;
+html{
+    height: 100%;
 }
 
 h1{
@@ -73,11 +78,23 @@ ul{
 }
 
 .summary{
-    position:relative;
+    position:absolute;
     left: 745px;
     right: 4px;
-    bottom: 180px;
+    bottom: 370px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 80%;
+}
+
+footer, .push {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    background: grey;
+}
+
+main {
+    min-height: 100vh;
+    margin-bottom: -100px;
 }
