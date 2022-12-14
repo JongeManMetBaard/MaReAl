@@ -7,7 +7,7 @@
     <body>
         <header class="intro">
             
-            <h1 class="title">Gamepage</h1>
+            <h1 class="title">henk</h1>
             <ul class="menu_bar">
                 <li><a href="Gamepage.php">Gamepage</a></li>
                 <li><a href="news.asp">Planning</a></li>
@@ -24,8 +24,9 @@
     </body>
     <h4 class="summary"> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
         De GTA V Premium Edition bevat het Criminal<br> Enterprise Starter Pack met onder meer<br> 1.000.000 in-game valuta.</h4>
+    <a href="detail_page.php" class="button">klik hier!</a>
         </div>
-    <footer>    
+    <footer>   
         <?php
         include('footer.php')
         ?>
