@@ -1,3 +1,21 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<?php
+ $hostName = "localhost";
+ $userName = "root";
+ $password = "";
+ $dbName = "mareal";
+ $conn= new mysqli($hostName,$userName,$password,$dbName);
+ if($conn){
+    echo "connected";
+ }else{
+    echo "not connected";
+ }
+
+  ?>
+=======
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,3 +44,7 @@
     </footer>
 </body>
 </html>
+<<<<<<< Updated upstream
+=======
+>>>>>>> 028330c2a2de5658aff8fc332fba8c416bd2df49
+>>>>>>> Stashed changes
