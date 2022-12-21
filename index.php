@@ -19,39 +19,10 @@
     </header>
     <h2 class="WelcomeText">Welcome</h2>
 
-    <div class="footer">
+    <footer>
         <?php
         include 'footer.php'
         ?>
-    </div>
+    </footer>
 </body>
 </html>
-
-
-<?php
-
- $servername = "localhost";
- $username = "root";
- $password = "";
- $dbname = "mareal";
- try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $stmt = $conn->prepare("SELECT id ,name, image, description FROM games");
-  $stmt->execute();
-
-
-  $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-  foreach($stmt->fetchAll() as $v) {
-    echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
-  }
-
-} catch(PDOException $e) {
-  echo "Error: " . $e->getMessage();
-}
-$conn = null;
-echo "</table>";
-
-$drie = 3
-?>
-  

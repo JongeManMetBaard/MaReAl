@@ -12,7 +12,7 @@
         
         <h1 class="title">detail page</h1>
         <ul class="menu_bar">
-            <li><a href="Gamepage.html">Gamepage</a></li>
+            <li><a href="Gamepage.php">Gamepage</a></li>
             <li><a href="news.asp">Planning</a></li>
             <li><a href="contact.asp">Information</a></li>
           </ul>
