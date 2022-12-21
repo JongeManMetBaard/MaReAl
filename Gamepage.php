@@ -25,10 +25,6 @@
     <h4 class="summary">Grand Theft Auto 5<br><br><br> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
         De GTA V Premium Edition bevat het Criminal<br> Enterprise Starter Pack met onder meer<br> 1.000.000 in-game valuta.</h4>
     <a href="detail_page.php" class="button">klik hier!</a><br>
-    <br><br><br><br><br>
-    <a href="detail_page.php" class="button">klik hier!</a><br>
-    <br><br><br><br><br>
-    <a href="detail_page.php" class="button">klik hier!</a>
         </div>
      
     <footer>   
