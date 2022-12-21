@@ -52,6 +52,6 @@
 $conn = null;
 echo "</table>";
 
-$drie = 3
+
 ?>
   
