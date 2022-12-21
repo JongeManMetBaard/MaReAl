@@ -7,6 +7,7 @@ body{
     min-height: 100%;
     margin: 0;
     line-height: 1.6;
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
@@ -97,7 +98,8 @@ main {
     width: 150px;
     height: 50px;
     display:block;
-    background-color: rgb(86, 86, 86);
+    /*background-color: rgb(86, 86, 86);*/
+    background-color: rgb(183, 14, 14);
     position: relative;
     top: -150px;
     left: 150px;
@@ -117,6 +119,5 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color:rgb(122, 122, 122);
+    background-color:rgb(86, 86, 86);
 }
-
