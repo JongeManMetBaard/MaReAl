@@ -19,11 +19,11 @@
     </header>
     <h2 class="WelcomeText">Welcome</h2>
 
-    <div class="footer">
+    <footer>
         <?php
         include 'footer.php'
         ?>
-    </div>
+    </footer>
 </body>
 </html>
 
