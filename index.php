@@ -26,6 +26,3 @@
     </footer>
 </body>
 </html>
-
-
-
