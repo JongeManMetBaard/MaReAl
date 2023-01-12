@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <?php 
-        require('function.php')
-        Connectdatabase()
+        require('functions.php');
+        Connectdatabase();
         ?>
     </head>
     <body>

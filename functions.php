@@ -1,9 +1,9 @@
 <?php
 
-function Connectdatabase()
+function Connectdatabase(){
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "mysql";
     $dbname = "mareal";
     try {
      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -21,3 +21,5 @@ echo "</table>";
 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
   foreach($stmt->fetchAll() as $v) {
     echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
+  }
+}
