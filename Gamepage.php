@@ -3,11 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <?php 
+        require('function.php')
+        Connectdatabase()
+        ?>
     </head>
     <body>
         <header class="intro">
             
-            <h1 class="title">henk</h1>
+            <h1 class="title">Gamepage</h1>
             <ul class="menu_bar">
                 <li><a href="Gamepage.php">Gamepage</a></li>
                 <li><a href="news.asp">Planning</a></li>
@@ -20,9 +24,13 @@
         <div class="push"></div>
     </body>
     <h4 class="summary"> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
+        <img style="position:relative; left:510px; top:10px" src="images/GTA.webp" alt="qwixx" width="225" height="250">
+   
+    <h4 class="summary">Grand Theft Auto 5<br><br><br> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
         De GTA V Premium Edition bevat het Criminal<br> Enterprise Starter Pack met onder meer<br> 1.000.000 in-game valuta.</h4>
-    <a href="detail_page.php" class="button">klik hier!</a>
+    <a href="detail_page.php" class="button">klik hier!</a><br>
         </div>
+     
     <footer>   
         <?php
         include('footer.php')
@@ -57,4 +65,5 @@
     
     $drie = 3
     ?>
+    </body>
 </html>
