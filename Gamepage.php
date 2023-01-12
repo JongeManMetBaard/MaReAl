@@ -15,11 +15,8 @@
             </ul>
         </header>
         <div class="page-wrap">
-        <img style="position:relative; left:510px; top:10px" src="images/GTA.webp" alt="qwixx" width="225" height="250">
-        <img style="position:relative; left:280px; top:250px;" src="images/littlebigplanet3.jpg"
-        alt="mens-erger-je-niet" width="200" height="220">
-        <img style="position:relative; left:78px; top:510px;" src="images/horizonforbiddenwest.webp"
-        alt="doolhof" width="200" height="240">
+        
+        
         <div class="push"></div>
     </body>
     <h4 class="summary"> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
@@ -31,4 +28,33 @@
         include('footer.php')
         ?>
     </footer>
+
+    <?php
+     $servername = "localhost";
+     $username = "root";
+     $password = "mysql";
+     $dbname = "mareal";
+    
+     try {
+      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $stmt = $conn->prepare("SELECT id ,name, image, description FROM games");
+      $stmt->execute();
+    
+    
+      $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+      foreach($stmt->fetchAll() as $v) {
+        echo $v["name"];
+        echo '<img style="position:relative; left:510px; top:10px" image alt="7_wonders" width="225" height="250">';
+        // echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
+      }
+    
+    } catch(PDOException $e) {
+      echo "Error: " . $e->getMessage();
+    }
+    $conn = null;
+    echo "</table>";
+    
+    $drie = 3
+    ?>
 </html>

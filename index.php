@@ -32,8 +32,9 @@
 
  $servername = "localhost";
  $username = "root";
- $password = "";
+ $password = "mysql";
  $dbname = "mareal";
+
  try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -43,6 +44,7 @@
 
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
   foreach($stmt->fetchAll() as $v) {
+    echo $v["name"];
     echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
   }
 
