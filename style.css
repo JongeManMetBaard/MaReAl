@@ -109,7 +109,7 @@ main {
     display:block;
     background-color: rgb(86, 86, 86);
     position: relative;
-    top: -150px;
+    top: 87px;
     left: 150px;
     color:white;
     text-align: center;
@@ -128,5 +128,10 @@ footer {
     left: 0;
     right: 0;
     background-color:rgb(122, 122, 122);
+}
+
+.gameTitle1{
+    position: absolute;
+    margin-bottom: 0 !important;
 }
 

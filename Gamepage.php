@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <?php 
-        require('function.php')
-        Connectdatabase()
+        require('functions.php');
+        Connectdatabase();
         ?>
     </head>
     <body>
@@ -23,11 +23,7 @@
         
         <div class="push"></div>
     </body>
-    <h4 class="summary"> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
-        <img style="position:relative; left:510px; top:10px" src="images/GTA.webp" alt="qwixx" width="225" height="250">
    
-    <h4 class="summary">Grand Theft Auto 5<br><br><br> Ga voor de ultieme GTA V-ervaring met de<br> GTA V Premium Edition voor de PlayStation 4!<br> 
-        De GTA V Premium Edition bevat het Criminal<br> Enterprise Starter Pack met onder meer<br> 1.000.000 in-game valuta.</h4>
     <a href="detail_page.php" class="button">klik hier!</a><br>
         </div>
      
@@ -52,7 +48,7 @@
     
       $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       foreach($stmt->fetchAll() as $v) {
-        echo $v["name"];
+        // echo $v["name"];
         echo '<img style="position:relative; left:510px; top:10px" image alt="7_wonders" width="225" height="250">';
         // echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
       }

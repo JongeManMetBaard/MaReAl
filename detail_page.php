@@ -18,8 +18,9 @@
           </ul>
     </header>
     <div class="page-wrap">
-        <img style="position:relative; left:510px; top:10px" src="images/GTA.webp" alt="qwixx" width="290" height="350">
+        <img style="position:relative; left: 30px; top:10px" src="images/GTA.webp" alt="qwixx" width="190" height="240">
     </body>
+    <h1 class="gameTitle1"> hallo</h1>
     <h4 class="summaryDetail"> Grand Theft Auto V: Premium Edition
         De Grand Theft Auto<br> V: Premium Edition bevat de complete verhaalervaring van<br> Grand Theft Auto V, toegang tot het uitgebreide 
         Grand Theft Auto <br>Online en alle bestaande gameplay-upgrades en content, waaronder<br> The Doomsday Heist, Gunrunning, Smuggler’s Run, 
