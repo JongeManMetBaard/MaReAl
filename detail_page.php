@@ -18,14 +18,19 @@
           </ul>
     </header>
     <div class="page-wrap">
-        <img style="position:relative; left: 30px; top:10px" src="images/GTA.webp" alt="qwixx" width="190" height="240">
+        <img style="position:relative; left: 30px; top:10px" src="images/GTA.webp" alt="qwixx" width="210" height="270">
     </body>
-    <h1 class="gameTitle1"> hallo</h1>
+    <h1 class="gameTitle1"> Grand theft auto five</h1>
     <h4 class="summaryDetail"> Grand Theft Auto V: Premium Edition
         De Grand Theft Auto<br> V: Premium Edition bevat de complete verhaalervaring van<br> Grand Theft Auto V, toegang tot het uitgebreide 
         Grand Theft Auto <br>Online en alle bestaande gameplay-upgrades en content, waaronder<br> The Doomsday Heist, Gunrunning, Smuggler’s Run, 
         en Bikers. Je <br>ontvangt ook het Criminal Enterprise Starter Pack, de snelste manier<br> om je misdaadimperium op te bouwen in Grand 
-        Theft Auto Online.
+        Theft Auto Online.</h4>
+
+        
+    <a href="detail_page.php" class="button2">klik hier!</a><br>
+    </div>
+
     <footer>    
         <?php
         include('footer.php')

@@ -24,8 +24,6 @@
         <div class="push"></div>
     </body>
    
-    <a href="detail_page.php" class="button">klik hier!</a><br>
-        </div>
      
     <footer>   
         <?php
@@ -49,7 +47,10 @@
       $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       foreach($stmt->fetchAll() as $v) {
         // echo $v["name"];
+        echo '<a href="detail_page.php" class="button">klik hier!</a><br>';
         echo '<img style="position:relative; left:510px; top:10px" image alt="7_wonders" width="225" height="250">';
+        echo $v["description"];
+
         // echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
       }
     

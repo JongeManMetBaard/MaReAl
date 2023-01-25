@@ -89,9 +89,9 @@ ul{
 
 .summaryDetail{
     position:absolute;
-    left: 445px;
+    left: 274px;
     right: 150px;
-    bottom: -15px;
+    bottom: 230px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 80%;
@@ -132,6 +132,31 @@ footer {
 
 .gameTitle1{
     position: absolute;
-    margin-bottom: 0 !important;
+    left:270px;
 }
 
+.button2{
+    width: 150px;
+    height: 50px;
+    display:block;
+    background-color: rgb(86, 86, 86);
+    position: relative;
+    top: 43px;
+    left: 30px;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+}
+
+.descriptionGame{
+    width: 150px;
+    height: 50px;
+    display:block;
+    background-color: rgb(86, 86, 86);
+    position: relative;
+    top: 87px;
+    left: 150px;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+}
