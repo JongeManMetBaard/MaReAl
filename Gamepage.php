@@ -5,7 +5,6 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <?php 
         require('functions.php');
-        Connectdatabase();
         ?>
     </head>
     <body>
@@ -32,14 +31,9 @@
     </footer>
 
     <?php
-     $servername = "localhost";
-     $username = "root";
-     $password = "mysql";
-     $dbname = "mareal";
-    
      try {
-      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $conn = Connectdatabase();
+      
       $stmt = $conn->prepare("SELECT id ,name, image, description FROM games");
       $stmt->execute();
     
@@ -47,11 +41,16 @@
       $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       foreach($stmt->fetchAll() as $v) {
         // echo $v["name"];
+
+        $img_name = $v['name'];
+        $img_src = $v['image'];
         echo '<a href="detail_page.php" class="button">klik hier!</a><br>';
-        echo '<img style="position:relative; left:510px; top:10px" image alt="7_wonders" width="225" height="250">';
+        ?>
+        <img src="afbeeldingen/<?php echo $img_src; ?>" alt="" title="<?php echo $img_name; ?>" class="img-responsive" />
+        <?php
         echo $v["description"];
 
-        // echo "<a id= ".$v["id"]. "src=images/" .$v["image"] ."></a>";
+    
       }
     
     } catch(PDOException $e) {
