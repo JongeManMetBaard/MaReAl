@@ -44,9 +44,11 @@
 
         $img_name = $v['name'];
         $img_src = $v['image'];
-        echo '<a href="detail_page.php" class="button">klik hier!</a><br>';
+        $gameid = $v['id'];
         ?>
-        <img src="afbeeldingen/<?php echo $img_src; ?>" alt="" title="<?php echo $img_name; ?>" class="img-responsive" />
+        <a href="detail_page.php?myId=<?php echo $gameid?>" class="button">klik hier!</a><br>
+        
+        <img src="afbeeldingen/<?php echo $img_src; ?>" alt=""  title="<?php echo $img_name; ?>" class="img-responsive" />
         <?php
         echo $v["description"];
 
@@ -59,7 +61,6 @@
     $conn = null;
     echo "</table>";
     
-    $drie = 3
     ?>
     </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Meester Proef</title>
+    <?php require('functions.php');?>
 </head>
 <body>
     <header class="intro">
@@ -18,17 +19,17 @@
           </ul>
     </header>
     <div class="page-wrap">
-        <img style="position:relative; left: 30px; top:10px" src="images/GTA.webp" alt="qwixx" width="210" height="270">
+        <!-- <img style="position:relative; left: 30px; top:10px" src="images/GTA.webp" alt="qwixx" width="210" height="270"> -->
     </body>
-    <h1 class="gameTitle1"> Grand theft auto five</h1>
+    <!-- <h1 class="gameTitle1"> Grand theft auto five</h1>
     <h4 class="summaryDetail"> Grand Theft Auto V: Premium Edition
         De Grand Theft Auto<br> V: Premium Edition bevat de complete verhaalervaring van<br> Grand Theft Auto V, toegang tot het uitgebreide 
         Grand Theft Auto <br>Online en alle bestaande gameplay-upgrades en content, waaronder<br> The Doomsday Heist, Gunrunning, Smuggler’s Run, 
         en Bikers. Je <br>ontvangt ook het Criminal Enterprise Starter Pack, de snelste manier<br> om je misdaadimperium op te bouwen in Grand 
-        Theft Auto Online.</h4>
+        Theft Auto Online.</h4> -->
 
         
-    <a href="detail_page.php" class="button2">klik hier!</a><br>
+    <!-- <a href="detail_page.php" class="button2">klik hier!</a><br> -->
     </div>
 
     <footer>    
@@ -37,3 +38,31 @@
         ?>
         </footer>
 </html>
+
+<?php 
+try{
+  $id = $_GET['myId'];
+  $conn = Connectdatabase();
+
+  $stmt = $conn->prepare("SELECT * FROM games WHERE id = '$id'");
+  $stmt->execute();
+
+  $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  foreach($stmt->fetchAll() as $v) {   
+
+  $img_name = $v['name'];
+  $img_src = $v['image'];
+
+  ?><img src="afbeeldingen/<?php echo $img_src; ?>" alt=""  title="<?php echo $img_name; ?>" class="img-responsive" /><?php
+
+  echo $v["description"];
+  }
+}
+catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+$conn = null;
+echo "</table>";
+
+
+?>
